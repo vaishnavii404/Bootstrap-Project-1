@@ -1,0 +1,236 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #06103C;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    width: 100%;
+}
+li{
+    list-style: none;
+}
+
+/* Mobile */
+
+.hero-image{
+    background-image: url("https://static.wixstatic.com/media/f61af8_f2b8d6008c40442a8a1f732d12b98301.png/v1/fill/w_400,h_478,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f61af8_f2b8d6008c40442a8a1f732d12b98301.png");
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+}
+.hero-image h2{
+    position:absolute;
+    top:10%;
+    left:5%;
+    right:35%;
+}
+.sale{
+    background-color: rgb(212, 212, 212);
+}
+.vote{
+    background-color: rgb(180, 179, 179);
+}
+.vote h1{
+    line-height:1.5;
+}
+.jour{
+    font-size:50px;
+    color:rgb(133, 133, 252);
+}
+.client{
+    background-image: url("https://images.unsplash.com/photo-1594923260971-d59f8ab83dc3?q=80&w=1252&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-attachment: fixed;
+    top:0;
+    left: 0;
+    z-index: 10;
+}
+input{
+    color:transparent;
+    border:1px solid white;
+}
+
+
+.hero-content {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Background image */
+.hero-section {
+  background-image: url("../images/background/new.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 100vh;
+}
+
+
+/* h2 over image */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0 10px;
+}
+
+.overlay h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Remaining content below image */
+.hero-content {
+  background-color: #fff;
+  color: #000;
+  padding: 25px 20px;
+  background: transparent;
+  color: #fff;
+
+
+}
+
+.hero-content p {
+  margin-bottom: 10px;
+}
+
+.hero-content strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+
+/* tab */
+@media(min-width:768px){
+    /* .hero-image{
+        height:600px;
+        background-attachment: fixed;
+        position: relative;
+    }
+    .click{
+        position:absolute;
+        top:55%;
+        left:15%;
+        z-index: 10;
+    }
+    .hero-image h2{
+        position:absolute;
+        top:10%;
+        left:10%;
+        width:25%;
+    } */
+    .img{
+        height:300px;
+        width:250px;
+    }
+    .click p{
+        width:80%;
+    }
+    blockquote{
+        width:80%;
+        margin:0 auto;
+    }
+}
+
+
+.hero-content {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Background image */
+.hero-section {
+  background-image: url("../images/background/new.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 100vh;
+}
+
+
+/* h2 over image */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0 10px;
+}
+
+.overlay h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Remaining content below image */
+.hero-content {
+  background-color: #fff;
+  color: #000;
+  padding: 25px 20px;
+  background: transparent;
+}
+
+.hero-content p {
+  margin-bottom: 10px;
+}
+
+.hero-content strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+/* Desktop */
+@media(min-width:992px){
+    .hero-image{
+        height:700px;
+    }
+    .img{
+        height:300px;
+        width:250px;
+    }
+    .span span{
+        color:rgb(88, 88, 163);
+        font-size:30px;
+    }
+    .client{
+        height:700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+}
